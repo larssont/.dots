@@ -21,6 +21,7 @@
     aa = add -A
     c = commit
     cm = commit -m
+    cam = commit --amend -m
     co = checkout
     cob = checkout -b
 	unadd = reset HEAD --
