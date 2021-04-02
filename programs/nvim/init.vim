@@ -38,6 +38,8 @@ nnoremap <silent> <Leader>e       :Lexplore<CR>
 nnoremap <leader>b :buffers<CR>:b<space>
 nnoremap <Leader>g :vimgrep<Space>
 nnoremap <silent> <leader>z :Goyo<CR>
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
 
 " Highlight yank
 augroup LuaHighlight
