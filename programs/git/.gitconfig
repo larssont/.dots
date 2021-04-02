@@ -17,15 +17,20 @@
 [difftool "nvimdiff"]
 	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [alias]
-	aliases = --list-cmds=alias
+    st = status -sb
+    aa = add -A
+    c = commit
+    cm = commit -m
+    co = checkout
+    cob = checkout -b
+	unadd = reset HEAD --
+	uncommit = reset --soft HEAD^
 	amend = commit --amend --no-edit
+	precommit = diff --cached --diff-algorithm=minimal -w
 	conflicts = diff --name-only --diff-filter=U
 	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
 	local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
-	precommit = diff --cached --diff-algorithm=minimal -w
-	st = status -sb
-	unadd = reset HEAD --
-	uncommit = reset --soft HEAD^
+	aliases = --list-cmds=alias
 [color]
 	branch = auto
 	diff = auto
