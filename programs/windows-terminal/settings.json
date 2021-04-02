@@ -1,0 +1,31 @@
+{
+    "profiles": {
+        "defaults": {
+            "fontFace": "Fira Code",
+            "colorScheme": "Panda Theme"
+        }
+    },
+    "schemes": [
+        {
+            "name": "Panda Theme",
+            "foreground": "#CCCCCC",
+            "background": "#292A2B",
+            "black": "#000000",
+            "blue": "#4876D6",
+            "brightBlack": "#7A8181",
+            "brightBlue": "#5CA7E4",
+            "brightCyan": "#00C990",
+            "brightGreen": "#13FFDC",
+            "brightPurple": "#FF9AC1",
+            "brightRed": "#F76E6E",
+            "brightWhite": "#989FB1",
+            "brightYellow": "#DAC26B",
+            "cyan": "#7DC1FF",
+            "green": "#35FFDC",
+            "purple": "#B084EB",
+            "red": "#EC2864",
+            "white": "#FFFFFF",
+            "yellow": "#FFB86C"
+        }
+    ]
+}

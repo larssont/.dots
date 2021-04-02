@@ -1,0 +1,19 @@
+### .gitconfig_local
+.gitconfig_local
+
+### fish_variables
+fish_variables
+_*.fish
+fisher.fish
+
+### nivm
+**/nvim/plugged/
+.netrwhist
+
+### vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

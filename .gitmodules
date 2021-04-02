@@ -1,0 +1,9 @@
+[submodule "linux/dotbot"]
+	path = install/dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "dotbot"]
+	path = install/dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "install/dotbot"]
+	path = install/dotbot
+	url = https://github.com/anishathalye/dotbot

@@ -1,0 +1,37 @@
+[core]
+    pager = bat --paging=auto
+    editor = nvim
+[include]
+    path = .dots/programs/git/.gitconfig_local
+[log]
+	date = relative
+[format]
+	pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+[diff]
+	tool = nvimdiff 
+[merge]
+	tool = fugitive 
+	prompt = false
+[mergetool "fugitive"]
+	cmd = "nvim -f -c \"Gdiffsplit!\" \"$MERGED\""
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[alias]
+	aliases = --list-cmds=alias
+	amend = commit --amend --no-edit
+	conflicts = diff --name-only --diff-filter=U
+	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
+	precommit = diff --cached --diff-algorithm=minimal -w
+	st = status -sb
+	unadd = reset HEAD --
+	uncommit = reset --soft HEAD^
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[init]
+	defaultBranch = main
+[pull]
+	ff = only

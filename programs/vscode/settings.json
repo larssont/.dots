@@ -1,0 +1,50 @@
+{
+    "[json]": {
+        "editor.formatOnSave": false
+    },
+    "bracket-pair-colorizer-2.colors": ["#F7B36A", "#FF76B5", "#19F9D8"],
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.renameOnType": true,
+    "editor.rulers": [100],
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 4,
+    "explorer.sortOrder": "type",
+    "extensions.autoCheckUpdates": true,
+    "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.json": "json"
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreMissingGitWarning": true,
+    "html.autoClosingTags": true,
+    "keyboard.dispatch": "keyCode",
+    "prettier.singleQuote": false,
+    "prettier.tabWidth": 4,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 1,
+    "workbench.colorCustomizations": {
+        "editorError.border": "#00000000",
+        "editorWarning.border": "#00000000"
+    },
+    "workbench.colorTheme": "Panda Syntax",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "readme"
+}

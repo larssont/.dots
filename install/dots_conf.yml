@@ -1,0 +1,32 @@
+- defaults:
+      link:
+          create: true
+          relink: true
+          relative: true
+          force: true
+
+- clean:
+      ~/:
+        force: false
+
+- create:
+      - ~/.config/fish
+
+- link:
+      ~/.nanorc: ../programs/nano/.nanorc
+      ~/.gitconfig: ../programs/git/.gitconfig
+      ~/.config/nvim: ../programs/nvim
+      ~/.config/bat: ../programs/bat
+      ~/.config/fish/config.fish: ../programs/fish/config.fish
+      ~/.config/fish/fish_plugins: ../programs/fish/fish_plugins
+      ~/.config/fish/functions: ../programs/fish/functions
+      ~/.config/fish/components: ../programs/fish/components
+      ~/.config/Code/User/settings.json: 
+        path: ../programs/vscode/settings.json
+        create: false
+- shell:
+      - [git submodule update --init --recursive, Installing submodules]
+      - [
+            cp -n ../programs/git/.gitconfig_local.defaults ../programs/git/.gitconfig_local,
+            Creating .gitconfig_local,
+        ]
