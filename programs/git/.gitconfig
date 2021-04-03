@@ -10,7 +10,7 @@
 [diff]
     tool = nvimdiff 
 [merge]
-    tool = nvim
+    tool = vimdiff
     conflictstyle = diff3
     prompt = false
 [mergetool]
