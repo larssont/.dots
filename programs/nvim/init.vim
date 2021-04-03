@@ -36,10 +36,13 @@ set inccommand=nosplit
 " Key mappings
 nnoremap <leader><Leader> :buffers<CR>:b<space>
 nnoremap <silent> <Leader>e       :Lexplore<CR>
-nnoremap <Leader>g :vimgrep<Space>
+nnoremap <Leader>rg :grep<Space>
 nnoremap <silent> <leader>z :Goyo<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
+nnoremap <leader>g1 :diffget LOCAL<CR> 
+nnoremap <leader>g2 :diffget BASE<CR> 
+nnoremap <leader>g3 :diffget REMOTE<CR> 
 
 " Highlight yank
 augroup LuaHighlight
