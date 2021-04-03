@@ -34,8 +34,8 @@ set smartcase                           " Case sensitive only if search contains
 set inccommand=nosplit
 
 " Key mappings
+nnoremap <leader><Leader> :buffers<CR>:b<space>
 nnoremap <silent> <Leader>e       :Lexplore<CR>
-nnoremap <leader>b :buffers<CR>:b<space>
 nnoremap <Leader>g :vimgrep<Space>
 nnoremap <silent> <leader>z :Goyo<CR>
 nnoremap <C-n> :bnext<CR>

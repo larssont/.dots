@@ -2,7 +2,7 @@ vim.cmd 'packadd paq-nvim'         -- Load package
 local paq = require'paq-nvim'.paq  -- Import module and bind `paq` function
 
 paq { 'savq/paq-nvim', opt=true }     -- Let Paq manage itself
-paq { 'psliwka/vim-smoothie', opt=true }
+paq 'psliwka/vim-smoothie'
 paq 'srcery-colors/srcery-vim'
 paq 'junegunn/goyo.vim'
 paq 'hoob3rt/lualine.nvim'
