@@ -1,0 +1,15 @@
+# Swaps k -> j and j -> k
+keybinding:
+  universal:
+    prevItem-alt: 'j'
+    nextItem-alt: 'k'
+    scrollUpMain-alt1: 'J'
+    scrollDownMain-alt1: 'K'
+    scrollUpMain-alt2: '<c-j>'
+    scrollDownMain-alt2: '<c-k>'
+  commits:
+    moveDownCommit: '<c-k>'
+    moveUpCommit: '<c-j>'
+gui:
+  nerdFontsVersion: "3"
+  border: "single"
